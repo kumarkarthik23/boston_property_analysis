@@ -1,0 +1,66 @@
+# ============================================================
+# .gitignore — Boston Property Analysis
+# ============================================================
+
+
+# -- Data files -----------------------------------------------
+# Raw CSVs are excluded — download from Analyze Boston:
+# https://data.boston.gov/dataset/property-assessment
+data/*.csv
+
+
+# -- R ----------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+Rplots.pdf
+
+# R output files
+*.Rout
+
+
+# -- Python ---------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# -- PySpark / Java -------------------------------------------
+# Spark local checkpoint and event log directories
+spark-warehouse/
+derby.log
+metastore_db/
+
+
+# -- OS & IDE -------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# RStudio
+*.Rproj
+.Rproj.user/
+
+
+# -- Misc -----------------------------------------------------
+*.log
+*.tmp
+*.bak
